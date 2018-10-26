@@ -1,0 +1,87 @@
+<!--  lobby.html -->
+<link rel="stylesheet" href="css/style.css" />    
+        <script src="prefixfree.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="game.js"></script>
+<div id="lobby" class="container">
+    <div id="lobby-header" class="row">
+        <div class="col">
+            <h1>Nog eventjes geduld...</h1>
+            <h4>Maak het jezelf in de tussentijd gemakkelijk</h4>
+        </div>
+    </div>
+    <div class="row justify-content-center align-items-start">
+
+        <div class="col-4">
+            <div class="card lobby-card shadow text-center">
+                <div class="card-header">
+                    <button type="button" class="btn btn-default btn-circle btn-xl lobby-card-header-button">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <h5 class="card-title">Bereid u voor</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Leer in twee minuten hoe u het maximale uit uw adviesgesprek haalt.
+                    Een goede voorbereiding is het halve werk!</p>
+                    <a href="#" id="videoButton"
+						class="btn btn-primary lobby-card-button" onClick=clickVideoBtn()
+						value="videoPlay">Bekijk de video</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card lobby-card shadow text-center">
+                <div class="card-header">
+                    <button type="button" class="btn btn-default btn-circle btn-xl lobby-card-header-button">
+                        <i class="fab fa-spotify"></i>
+                    </button>
+                    <h5 class="card-title">Luister naar Spotify</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Het wachtmuziekje was nog nooit zo leuk. Zet uw favoriete playlist aan op
+                    Spotify en ga swingend het adviesgesprek in.</p>
+                    <a id="musicButton" class="btn btn-primary lobby-card-button" onClick=clickMusicButton() >Luister een muziekje</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card lobby-card shadow text-center">
+                <div class="card-header">
+                    <button type="button" class="btn btn-default btn-circle btn-xl lobby-card-header-button">
+                        <i class="fas fa-gamepad"></i>
+                    </button>
+                    <h5 class="card-title">Speel een spelletje</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Weet u al alles over het afsluiten van uw eerste hypotheek? Doe de
+                    quiz en check uw kennis.</p>
+                    <a href="#" class="btn btn-primary lobby-card-button" onClick=clickGameBtn()>Doe de hypotheek quiz</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<video id="runVideo" width="320" height="240" controls  style="display: none;">
+	<source src="BigDemo_20180906.mp4" type="video/mp4">
+</video>
+
+<!-- <iframe id = "runIframe" width="420" height="315" style="display: none;"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>  -->
+<iframe id="playVideo" width="300" height="600" controls  style="display: none;" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/320494713&color=%23938c87&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+
+<div id="gameBoard" style="display: none;">
+	<span id="gameButtons"> <span class="button"> <span id="counter">0</span> Moves
+	</span> <span class="button"> <a onclick="startAgain();">Start again</a>
+	</span>
+	</span>
+
+	<div id="boxes"></div>
+</div>
+
+
+<script src="lobby.js"></script>

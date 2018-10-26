@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed');
+
+html, body {
+    color: white;
+    background-color: darkslategrey;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #005e5d;
+}
+
+.card, .btn {
+    border-radius: .1rem;
+}
+
+.card {
+    padding: 3rem;
+}
+
+
+
+
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+.btn-circle.btn-lg {
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 25px;
+}
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 1.33;
+    border-radius: 35px;
+}
+
+
+
+
+
+#wrapper {
+    margin: 0;
+    padding: 0;
+    background: #00675e linear-gradient(135deg, #005e5d 0%, #00877D 58%, #00756F 58%, #009185 100%);
+}
+
+.no-margins {
+    margin: 0;
+    padding: 0;
+}
+
+#main  {
+    color: black;
+    padding: 0;
+}
+
+
+
+#sidebar {
+    -ms-flex: 0 0 100px;
+    flex: 0 0 100px;
+    color: black;
+    background-color: white;
+    padding-top: 30px;
+    border-right: 1px solid #E4E4E4;
+    box-shadow: 0px 0px 4px #E4E4E4;
+}
+
+#sidebar hr {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+
+
+/* signin.html */
+
+#signin-submit-button {
+    color: black;
+    background-color: rgb(255, 210, 0);
+    border-color: rgb(255, 210, 0);
+}
+#signin-submit-button:hover {
+    background-color: rgb(255,226, 99);
+}
+
+
+
+/* chat */
+
+#chatbox {
+    -ms-flex: 0 0 320px;
+    flex: 0 0 320px;
+    color: black;
+    background-color: white;
+    padding-top: 30px;
+    padding: 30px;
+
+    display: none;
+}
+
+#chatbox hr {
+    margin-top: 18px;
+    margin-left: -30px;
+    margin-right: -30px;
+}
+
+#chat-messages {
+    height: 80%;
+    height: calc(100% - 160px);
+    max-height: 80%;
+    max-height: calc(100% - 160px);
+    overflow-y: auto;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.chat-message {
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.chat-message p {
+    padding: 0;
+    margin: 0;
+}
+.my-chat-message{
+    background-color: #EDF7F7;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.their-chat-message {
+    background-color: #E4E4E4;
+    margin-right: 30px;
+}
+
+.chat-their-name {
+    font-weight: bold;
+    font-size: small;
+}
+.chat-text{}
+.chat-time{
+    color: #999;
+    font-size: small
+}
+
+#chat-input {
+    border-top: 1px solid #E4E4E4;
+    position: absolute;
+    bottom: 10px;
+    margin: 0;
+    padding: 10px;
+    padding-bottom: 0;
+    margin-left: -30px;
+    margin-right: -30px;
+    width: 320px;
+}
+
+#chat-text-input {
+    width: 230px;
+    border-left: none;
+    border-bottom: none;
+    border-top: none;
+}
+
+#chat-text-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #CCCCCC;
+}
+#chat-text-input::-moz-placeholder { /* Firefox 19+ */
+    color: #CCCCCC;
+}
+#chat-text-input:-ms-input-placeholder { /* IE 10+ */
+    color: #CCCCCC;
+}
+
+#chat-send-button {
+    color: white;
+    float: right;
+    margin-left: 10px;
+}
+
+#chat-send-button::after {
+    border-left: 1px solid #E4E4E4;
+}
+
+
+
+
+/* meeting.html */
+
+#meeting {
+    background-color: #222222;
+}
+
+#my-video {
+    width:240px;
+    box-shadow: 0 0px 2px #E4E4E4;
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    z-index: 999;
+    background-size: cover;
+}
+
+#their-video {
+    width: 100%;
+}
+
+#video-controls {
+}
+
+#video-controls button {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#exit-meeting-button {
+    color: #DB422E;
+}
+
+
+
+
+/* lobby.html */
+
+#lobby {
+    padding: 2rem;
+    margin: 2rem;
+}
+#lobby-header {
+    margin-bottom: 3rem;
+}
+#lobby-header h1, #lobby-header h4 {
+    color: white;
+}
+
+.lobby-card {
+    padding: 0;
+}
+
+.lobby-card .card-header {
+    background-color: #EDF7F7;
+    border: none;
+    padding: 2rem;
+    padding-bottom: 1rem;
+}
+
+.lobby-card .card-header .card-title {
+    margin-top: 1rem;
+}
+.lobby-card .card-header .fas, .lobby-card .card-header .fas {
+    font-size: 120%;
+}
+.lobby-card-button {
+    color: black;
+    background-color: rgb(255, 210, 0);
+    border-color: rgb(255, 210, 0);
+    width: 100%;
+    font-size: 90%;
+    font-weight: normal;
+}
+.lobby-card-button:hover {
+    color: black;
+    background-color: rgb(255,226, 99);
+}
+.lobby-card-header-button {
+    color: white;
+    background-color: #005e5d;
+}
+.card-text {
+    text-align: left;
+    font-size: 90%;
+}
